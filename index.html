@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="ja">
 <head>
@@ -15,7 +14,7 @@
     h2 { margin-top: 28px; font-size: 1.2rem; }
     .card { background: rgba(127,127,127,.06); border: 1px solid rgba(127,127,127,.2); border-radius: 12px; padding: 14px 16px; }
     ul { padding-left: 1.2em; }
-    .lang-switch { display: flex; gap: 8px; margin: 12px 0 0; }
+    .lang-switch { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 0; }
     .lang-switch button { padding: 6px 10px; border-radius: 8px; border: 1px solid #bbb; background: white; cursor: pointer; }
     .lang-switch button[aria-pressed="true"] { background: #0b57d0; color: #fff; border-color: #0b57d0; }
     .lang { display: none; }
@@ -33,8 +32,14 @@
     <div class="lang-switch" role="tablist" aria-label="Language switch">
       <button id="btn-ja" role="tab" aria-controls="ja" aria-selected="true" aria-pressed="true">日本語</button>
       <button id="btn-en" role="tab" aria-controls="en" aria-selected="false" aria-pressed="false">English</button>
+      <button id="btn-es" role="tab" aria-controls="es" aria-selected="false" aria-pressed="false">Español</button>
+      <button id="btn-ar" role="tab" aria-controls="ar" aria-selected="false" aria-pressed="false">العربية</button>
+      <button id="btn-hi" role="tab" aria-controls="hi" aria-selected="false" aria-pressed="false">हिन्दी</button>
+      <button id="btn-zh-hans" role="tab" aria-controls="zh-hans" aria-selected="false" aria-pressed="false">中文 (简体)</button>
+      <button id="btn-zh-hant" role="tab" aria-controls="zh-hant" aria-selected="false" aria-pressed="false">中文 (繁體)</button>
     </div>
   </header>
+
 
   <main>
     <!-- 日本語 -->
@@ -148,6 +153,149 @@
       <h2>9. Contact</h2>
       <p>For any questions, contact us at <a href="mailto:pluma.hatchery@gmail.com">pluma.hatchery@gmail.com</a>.</p>
     </section>
+
+      <!-- Español -->
+    <section id="es" class="lang" role="tabpanel" aria-labelledby="btn-es">
+      <div class="card"><strong>Aplicación:</strong> Screenshot Organizer (JP: スクショ整理くん) (“la App”)<br>
+        <strong>Operador:</strong> スクショ整理くん<br>
+        <strong>Contacto:</strong> <a href="mailto:pluma.hatchery@gmail.com">pluma.hatchery@gmail.com</a>
+      </div>
+      <h2>1. Información que recopilamos</h2>
+      <ul>
+        <li><strong>Fotos / capturas en el dispositivo</strong><br>
+          La App accede a tu biblioteca de fotos para mostrar, organizar y eliminar capturas. Los datos se procesan localmente en tu dispositivo y <u>no se envían</u> a nuestros servidores.</li>
+        <li><strong>Datos publicitarios (AdMob)</strong><br>
+          Usamos Google Mobile Ads (AdMob). Google puede recopilar el ID de publicidad, información general del dispositivo y ubicación aproximada según sus políticas.</li>
+        <li><strong>Datos de diagnóstico</strong><br>
+          Podemos recopilar registros de fallos y estadísticas mínimas (anonimizadas) estrictamente para mejorar la calidad y soporte.</li>
+      </ul>
+      <h2>2. Uso de la información</h2>
+      <ul>
+        <li>Proveer funciones principales (ver, organizar, eliminar capturas)</li>
+        <li>Mostrar y optimizar anuncios</li>
+        <li>Mejorar calidad, resolver problemas y brindar soporte</li>
+      </ul>
+      <h2>3. Permisos y ATT</h2>
+      <ul>
+        <li><strong>Acceso a fotos:</strong> necesario para ver/eliminar capturas. Si se deniega, esas funciones no estarán disponibles.</li>
+        <li><strong>Autorización de seguimiento (ATT):</strong> puede solicitarse para anuncios personalizados. <u>Las funciones principales siguen disponibles incluso si lo rechazas</u>.</li>
+      </ul>
+      <h2>4. Compartir con terceros</h2>
+      <p>No vendemos datos personales. Servicios de terceros como AdMob pueden procesar datos de acuerdo con sus políticas.</p>
+      <h2>5. Almacenamiento y seguridad</h2>
+      <ul>
+        <li>Las capturas se procesan solo en el dispositivo y no se cargan.</li>
+        <li>Mantenemos solo registros mínimos y los eliminamos o anonimizamos dentro de un período razonable.</li>
+      </ul>
+      <h2>6. Opciones del usuario</h2>
+      <ul>
+        <li>Cambiar permiso ATT en Ajustes de iOS &gt; Privacidad y seguridad &gt; Rastreo.</li>
+        <li>Cambiar acceso a fotos en Ajustes de iOS &gt; la App.</li>
+        <li>Configurar personalización de anuncios en la página de Google Ads.</li>
+      </ul>
+      <h2>7. Privacidad infantil</h2>
+      <p>La App no está dirigida a menores de 13 años ni recopilamos sus datos.</p>
+      <h2>8. Cambios en la política</h2>
+      <p>Podemos actualizar esta política. Los cambios importantes se anunciarán en esta página con la fecha actualizada.</p>
+      <h2>9. Contacto</h2>
+      <p>Para consultas: <a href="mailto:pluma.hatchery@gmail.com">pluma.hatchery@gmail.com</a></p>
+    </section>
+
+    <!-- العربية -->
+    <section id="ar" class="lang" role="tabpanel" aria-labelledby="btn-ar" dir="rtl">
+      <div class="card"><strong>التطبيق:</strong> Screenshot Organizer (スクショ整理くん)<br>
+        <strong>المشغّل:</strong> スクショ整理くん<br>
+        <strong>الاتصال:</strong> <a href="mailto:pluma.hatchery@gmail.com">pluma.hatchery@gmail.com</a>
+      </div>
+      <h2>1. المعلومات التي نجمعها</h2>
+      <ul>
+        <li><strong>الصور / لقطات الشاشة على الجهاز</strong><br>
+          يصل التطبيق إلى مكتبة الصور لعرض وتنظيم وحذف لقطات الشاشة. تتم معالجة البيانات محليًا <u>ولا تُرفع</u> إلى خوادمنا.</li>
+        <li><strong>بيانات الإعلانات (AdMob)</strong><br>
+          نستخدم Google AdMob. قد تجمع Google معرف الإعلان ومعلومات عامة عن الجهاز والموقع التقريبي وفقًا لسياساتها.</li>
+        <li><strong>بيانات التشخيص</strong><br>
+          قد نجمع سجلات الأعطال وإحصاءات مبسطة (مجهولة) لتحسين الجودة.</li>
+      </ul>
+      <h2>2. استخدام المعلومات</h2>
+      <ul>
+        <li>عرض وتنظيم وحذف لقطات الشاشة</li>
+        <li>عرض وتحسين الإعلانات</li>
+        <li>تحسين الجودة والدعم الفني</li>
+      </ul>
+      <h2>3. الأذونات و ATT</h2>
+      <ul>
+        <li><strong>إذن الصور:</strong> ضروري لعرض/حذف اللقطات.</li>
+        <li><strong>إذن التتبع (ATT):</strong> قد يُطلب للإعلانات المخصصة. <u>الوظائف الأساسية تبقى متاحة حتى لو رفضت</u>.</li>
+      </ul>
+      <h2>4. مشاركة مع أطراف ثالثة</h2>
+      <p>لا نبيع بيانات شخصية. قد تعالج خدمات مثل AdMob البيانات وفقًا لسياساتها.</p>
+      <h2>5. التخزين والأمان</h2>
+      <ul>
+        <li>تُعالج اللقطات فقط على الجهاز ولا تُرفع.</li>
+        <li>نحتفظ بسجلات محدودة ونحذفها خلال فترة مناسبة.</li>
+      </ul>
+      <h2>6. خيارات المستخدم</h2>
+      <ul>
+        <li>تغيير إذن ATT من إعدادات iOS &gt; الخصوصية والأمان &gt; التتبع.</li>
+        <li>تغيير إذن الصور من إعدادات iOS &gt; التطبيق.</li>
+        <li>تعديل إعدادات تخصيص الإعلانات عبر Google.</li>
+      </ul>
+      <h2>7. خصوصية الأطفال</h2>
+      <p>التطبيق غير مخصص لمن هم دون 13 عامًا ولا نجمع بياناتهم.</p>
+      <h2>8. التغييرات</h2>
+      <p>قد نحدّث هذه السياسة. سيتم الإعلان عن التغييرات هنا مع تاريخ محدث.</p>
+      <h2>9. الاتصال</h2>
+      <p>للاستفسار: <a href="mailto:pluma.hatchery@gmail.com">pluma.hatchery@gmail.com</a></p>
+    </section>
+
+    <!-- हिन्दी -->
+    <section id="hi" class="lang" role="tabpanel" aria-labelledby="btn-hi">
+      <div class="card"><strong>ऐप:</strong> Screenshot Organizer (スクショ整理くん)<br>
+        <strong>ऑपरेटर:</strong> スクショ整理くん<br>
+        <strong>संपर्क:</strong> <a href="mailto:pluma.hatchery@gmail.com">pluma.hatchery@gmail.com</a>
+      </div>
+      <h2>1. हम कौन सी जानकारी एकत्र करते हैं</h2>
+      <ul>
+        <li><strong>डिवाइस की फ़ोटो / स्क्रीनशॉट</strong><br>
+          ऐप स्क्रीनशॉट देखने, व्यवस्थित करने और हटाने के लिए आपकी फ़ोटो लाइब्रेरी तक पहुँचता है। डेटा केवल डिवाइस पर संसाधित होता है और <u>हमारे सर्वर पर अपलोड नहीं होता</u>।</li>
+        <li><strong>विज्ञापन डेटा (AdMob)</strong><br>
+          हम Google AdMob का उपयोग करते हैं। Google विज्ञापन ID, सामान्य डिवाइस जानकारी और अनुमानित स्थान अपनी नीतियों के अनुसार एकत्र कर सकता है।</li>
+        <li><strong>निदान डेटा</strong><br>
+          हम क्रैश लॉग और न्यूनतम उपयोग आँकड़े (अनाम) एकत्र कर सकते हैं।</li>
+      </ul>
+      <h2>2. जानकारी का उपयोग</h2>
+      <ul>
+        <li>स्क्रीनशॉट देखना, व्यवस्थित करना और हटाना</li>
+        <li>विज्ञापन दिखाना और अनुकूलित करना</li>
+        <li>गुणवत्ता सुधार और समर्थन</li>
+      </ul>
+      <h2>3. अनुमतियाँ और ATT</h2>
+      <ul>
+        <li><strong>फ़ोटो अनुमति:</strong> स्क्रीनशॉट देखने/हटाने के लिए आवश्यक।</li>
+        <li><strong>ट्रैकिंग अनुमति (ATT):</strong> व्यक्तिगत विज्ञापनों के लिए माँगा जा सकता है। <u>मुख्य सुविधाएँ तब भी उपलब्ध हैं</u>।</li>
+      </ul>
+      <h2>4. तृतीय पक्ष साझाकरण</h2>
+      <p>हम व्यक्तिगत डेटा नहीं बेचते। AdMob जैसे सेवाएँ नीतियों के अनुसार डेटा प्रोसेस कर सकती हैं।</p>
+      <h2>5. भंडारण और सुरक्षा</h2>
+      <ul>
+        <li>डेटा केवल डिवाइस पर संसाधित होता है और अपलोड नहीं होता।</li>
+        <li>केवल न्यूनतम लॉग रखे जाते हैं और समय पर हटाए जाते हैं।</li>
+      </ul>
+      <h2>6. उपयोगकर्ता विकल्प</h2>
+      <ul>
+        <li>iOS सेटिंग्स &gt; गोपनीयता और सुरक्षा &gt; ट्रैकिंग में बदलें।</li>
+        <li>फ़ोटो अनुमति iOS सेटिंग्स &gt; ऐप में बदलें।</li>
+        <li>Google विज्ञापन सेटिंग्स में विज्ञापन वैयक्तिकरण बदलें।</li>
+      </ul>
+      <h2>7. बच्चों की गोपनीयता</h2>
+      <p>ऐप 13 वर्ष से कम आयु के बच्चों के लिए नहीं है और हम उनका डेटा एकत्र नहीं करते।</p>
+      <h2>8. नीति में बदलाव</h2>
+      <p>नीति समय-समय पर अपडेट हो सकती है। बदलाव इस पेज पर दिखेंगे।</p>
+      <h2>9. संपर्क</h2>
+      <p>प्रश्नों के लिए: <a href="mailto:pluma.hatchery@gmail.com">pluma.hatchery@gmail.com</a></p>
+    </section>
+
+    
   </main>
 
   <footer>
